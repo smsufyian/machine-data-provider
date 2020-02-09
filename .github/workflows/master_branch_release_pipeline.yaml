@@ -1,0 +1,4 @@
+#TODO: Release pipeline to ensure branch reliability, docker image creation and push it to docker hub , notification to slack/gitter
+name: Release pipeline
+on: [push]
+branch: master

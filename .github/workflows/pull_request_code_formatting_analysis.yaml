@@ -1,0 +1,3 @@
+#TODO: Code formatting analysis which includes , 1.editor's config linting
+name: Pull request formatting analysis
+on: [pull_request]

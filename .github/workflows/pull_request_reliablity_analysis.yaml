@@ -1,0 +1,3 @@
+#TODO: Run all test cases and ensure code coverage of 90%
+name: Pull request reliablity analysis
+on: [pull_request]

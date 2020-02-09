@@ -1,0 +1,20 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+
+# Blacklist the highest level folder with /*
+/*
+
+# Whitelist the files that should be part of the respository.
+!.gitignore
+!.dockerignore
+!.editorconfig
+!.gitattributes
+!README.md
+!CONTRIBUTING.md
+!pom.xml
+!LICENSE.txt
+!src
+!.github
+!script
+!checkstyle
+!docker
+!infra
