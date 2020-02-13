@@ -18,17 +18,17 @@
         <java.version>13</java.version>
         <maven.plugin.version>2.2.4.RELEASE</maven.plugin.version>
         <spring.actuator.version>2.2.4.RELEASE</spring.actuator.version>
-        <spring.dev-tools.version>2.2.4.RELEASE</spring.dev-tools.version>
-        <spring.web-mvc.version>5.2.3.RELEASE</spring.web-mvc.version>
-        <spring.rest-docs.version>2.0.4.RELEASE</spring.rest-docs.version>
+        <spring.data-jpa.version>2.2.4.RELEASE</spring.data-jpa.version>
+        <spring.web.version>2.2.4.RELEASE</spring.web.version>
         <spring.admin-client.version>2.2.2</spring.admin-client.version>
         <spring.admin-server.version>2.2.2</spring.admin-server.version>
-        <spring.config-processor.version>2.2.4.RELEASE</spring.config-processor.version>
-        <spring.test-starter.version>2.2.4.RELEASE</spring.test-starter.version>
-        <spring.data-jpa.version>2.2.4.RELEASE</spring.data-jpa.version>
+        <spring.dev-tools.version>2.2.4.RELEASE</spring.dev-tools.version>
         <spring.embedded-db.version>1.4.200</spring.embedded-db.version>
-        <spring.postgresql-drive.version>42.2.10</spring.postgresql-drive.version>
-        <apache.poi.version>4.1.1</apache.poi.version>
+        <spring.postgresql-driver.version>42.2.10</spring.postgresql-driver.version>
+        <spring.config-processor.version>2.2.4.RELEASE</spring.config-processor.version>
+        <spring.lombok.version>1.18.12</spring.lombok.version>
+        <spring.test-starter.version>2.2.4.RELEASE</spring.test-starter.version>
+        <open-csv.version>4.0</open-csv.version>
     </properties>
 
     <dependencies>
@@ -37,18 +37,15 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
             <version>${spring.actuator.version}</version>
         </dependency>
+         <dependency>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-starter-data-jpa</artifactId>
+             <version>${spring.data-jpa.version}</version>
+         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <version>${spring.dev-tools.version}</version>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.restdocs</groupId>
-            <artifactId>spring-restdocs-mockmvc</artifactId>
-            <version>${spring.rest-docs.version}</version>
-            <scope>test</scope>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring.web.version}</version>
         </dependency>
         <dependency>
             <groupId>de.codecentric</groupId>
@@ -57,51 +54,51 @@
         </dependency>
         <dependency>
             <groupId>de.codecentric</groupId>
-            <artifactId>spring-boot-admin-server</artifactId>
+            <artifactId>spring-boot-admin-starter-server</artifactId>
             <version>${spring.admin-server.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <version>${spring.config-processor.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-jpa</artifactId>
-            <version>${spring.data-jpa.version}</version>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+            <version>${spring.dev-tools.version}</version>
         </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
+            <scope>runtime</scope>
             <version>${spring.embedded-db.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>${spring.postgresql-drive.version}</version>
+            <scope>runtime</scope>
+            <version>${spring.postgresql-driver.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>${spring.web-mvc.version}</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+            <version>${spring.config-processor.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>${apache.poi.version}</version>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+            <scope>provided</scope>
+            <version>${spring.lombok.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>${open-csv.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <version>${spring.test-starter.version}</version>
             <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
+            <version>${spring.test-starter.version}</version>
         </dependency>
     </dependencies>
 

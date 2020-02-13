@@ -1,0 +1,11 @@
+key,machineKey,name,type,unit
+heat,flufferizer,Heat,real,joule
+moisture,flufferizer,Moisture,real,%
+power,flufferizer,Power On,boolean,
+heat,stufferizer,Heat,real,joule
+stuffing,stufferizer,Stuffing,string,
+quantity,stufferizer,Quantity,int,#
+power,stufferizer,Power On,boolean,
+heat,wrapperizer,Heat,real,joule
+glue,wrapperizer,Glue,string,
+power,wrapperizer,Power On,boolean,

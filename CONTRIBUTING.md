@@ -43,8 +43,7 @@ Once your changes and tests are ready to submit for review:
 
 1. Test your changes locally
 
-    Run the test suite to make sure that nothing is broken. See the
-[TESTING](TESTING.asciidoc) file for help running tests.
+    Run the test suite to make sure that nothing is broken.
 
 2. Make sure that the code coverage is above 90% 
    
