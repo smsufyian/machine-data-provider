@@ -19,7 +19,7 @@
         <maven.plugin.version>2.2.4.RELEASE</maven.plugin.version>
         <spring.actuator.version>2.2.4.RELEASE</spring.actuator.version>
         <spring.data-jpa.version>2.2.4.RELEASE</spring.data-jpa.version>
-        <spring.web.version>2.2.4.RELEASE</spring.web.version>
+        <spring.web.version>2.5.12</spring.web.version>
         <spring.admin-client.version>2.2.2</spring.admin-client.version>
         <spring.admin-server.version>2.2.2</spring.admin-server.version>
         <spring.dev-tools.version>2.2.4.RELEASE</spring.dev-tools.version>
