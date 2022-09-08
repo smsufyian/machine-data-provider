@@ -24,7 +24,7 @@
         <spring.admin-server.version>2.2.2</spring.admin-server.version>
         <spring.dev-tools.version>2.2.4.RELEASE</spring.dev-tools.version>
         <spring.embedded-db.version>1.4.200</spring.embedded-db.version>
-        <spring.postgresql-driver.version>42.2.10</spring.postgresql-driver.version>
+        <spring.postgresql-driver.version>42.4.1</spring.postgresql-driver.version>
         <spring.config-processor.version>2.2.4.RELEASE</spring.config-processor.version>
         <spring.lombok.version>1.18.12</spring.lombok.version>
         <spring.test-starter.version>2.2.4.RELEASE</spring.test-starter.version>
